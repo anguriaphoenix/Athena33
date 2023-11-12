@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+.App {
+}
+.mainTitle {
+  font-size: 70px;
+  font-weight: 400;
+  background: linear-gradient(
+    45deg,
+    #6621d6,
+    #ba81c1,
+    #2d4ddb
+  ); /* 渐变颜色设置 */
+  -webkit-background-clip: text; /* 用于支持WebKit浏览器（如Chrome和Safari）的属性 */
+  background-clip: text; /* 通用的 background-clip 属性 */
+  color: transparent; /* 使文本透明 */
+  font-family: "Lato"; /* 指定字体 */
+}
+.subtitle {
+  font-size: 25px;
+  font-weight: 400;
+}
+.container {
+  max-width: 2000px;
+  margin: 0 auto;
+  /* padding: 20px; */
+  background-color: #fff;
+  border-radius: 5px;
+  color: #14072b;
+}
+
+/* Navbar */
+.zIndex999 {
+  /* margin-top: 10px; */
+  z-index: 999;
+}
+
+.zIndex999:hover {
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  flex-shrink: 2;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: 0.3s ease;
+  z-index: 10;
+  .navbar-logo {
+    max-width: 50px;
+    height: auto;
+    margin-left: 15px;
+  }
+  .navbar-logo:hover {
+    cursor: pointer;
+  }
+
+  .navbar-menu {
+    width: 50%;
+  }
+  .navbar-wallet {
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: 10px;
+    vertical-align: center;
+  }
+}
+/* 固定样式 */
+.navbar.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: 0.3s ease;
+}
+/* body */
+.mainPic {
+  background-image: linear-gradient(135deg, #e08417 0%, #6621d6 100%);
+  width: 100%;
+  height: 800px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .title {
+    height: 400px;
+    font-size: 100px;
+    font-weight: 500px;
+    color: #f3edfc;
+    .mainPic-logo {
+      margin-top: 5%;
+      width: 70%;
+      height: auto;
+    }
+  }
+  .mainPic-subtitle {
+    color: #f3edfc;
+    font-size: 30px;
+    font-weight: 500px;
+    margin-top: -25px;
+    margin-bottom: 25px;
+  }
+  .subtitle1 {
+    margin-bottom: 20px;
+  }
+}
+.button {
+  width: 90px;
+  height: 40px;
+}
+
+.welcomeWord {
+  width: 150vh;
+  padding: 70px 20px;
+  margin: 0 auto;
+  .welcomeWord-title {
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .welcomeWord-items {
+    text-align: justify;
+    font-size: 24px;
+    background: linear-gradient(
+      45deg,
+      #6621d6,
+      #ba81c1,
+      #2d4ddb
+    ); /* 渐变颜色设置 */
+    -webkit-background-clip: text; /* 用于支持WebKit浏览器（如Chrome和Safari）的属性 */
+    background-clip: text; /* 通用的 background-clip 属性 */
+    color: transparent; /* 使文本透明 */
+    font-family: "Lato"; /* 指定字体 */
+    .welcomeWord-items-emoji {
+      color: white;
+    }
+  }
+}
+.welcomeWord-pic {
+  width: 200px;
+  height: 300px;
+  .img {
+    display: block;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.Introduce {
+  background-color: lemonchiffon;
+}
+
+.certificates {
+  background-color: #ab9ac7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden; /* 隐藏溢出的内容 */
+  padding: 20px;
+  height: 400px;
+  .certificates-list {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 50%;
+    height: auto;
+    flex: 1; /* 使所有项目具有相同的弹性，平均分布 */
+    flex-shrink: 2; /* 使项目可以缩小 */
+    min-width: 0; /* 允许项目缩小到0，避免溢出 */
+    background-color: #d5c1de;
+    margin-bottom: 20px;
+    .certificates-name {
+      font-family: "Lato";
+      font-size: 23px;
+    }
+    .certificates-subname {
+      font-family: "Lato";
+      font-size: 18px;
+    }
+  }
+}
+
+.courses {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  padding: 20px;
+  .courses-detail {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* 允许项目换行 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    .courses-item {
+      width: 500px;
+      height: auto;
+      flex: 0 0 calc(33.33% - 10px); /* 三个项目每行，考虑间距 */
+      margin: 20px; /* 可以调整间距大小 */
+      background-color: #f3edfc;
+    }
+    .course-img {
+      width: 100px;
+      height: 100px;
+      background-color: bisque;
+    }
+  }
+  @media (max-width: 800px) {
+    .course {
+      flex-basis: 100%; /* 当页面宽度小于800px时，每行只显示1个项目 */
+    }
+  }
+}
+
+.info {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  justify-content: space-evenly;
+
+  .info-item {
+    width: 400px;
+    height: 300px;
+    flex: 0 0 calc(33.33% - 10px); /* 三个项目每行，考虑间距 */
+    margin: 5px; /* 可以调整间距大小 */
+    margin-top: 10px;
+    border: 2px solid #ab9ac7;
+    background-color: #f3edfc;
+  }
+  @media (max-width: 800px) {
+    .info-item {
+      flex-basis: 100%; /* 当页面宽度小于800px时，每行只显示1个项目 */
+    }
+  }
+}
+
+.about-us {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 70%;
+}
+
+.queries {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: #f3edfc;
+  .queries-items {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    flex-wrap: wrap; /* 允许项目换行 */
+    justify-content: space-evenly;
+    margin: 0 auto;
+    .queries-item {
+      width: 300px;
+      height: 100%;
+      flex: 0 0 calc(33.33% - 10px); /* 三个项目每行，考虑间距 */
+      margin: 5px; /* 可以调整间距大小 */
+      overflow: hidden;
+      text-overflow: clip;
+      padding: 20px 50px;
+      .queries-item-title {
+        color: #6621d6;
+      }
+      .queries-item-answer {
+        font-size: 18px;
+        justify-content: center;
+        text-align: justify;
+        color: #8e8899;
+      }
+    }
+    @media (max-width: 800px) {
+      .queries-item {
+        flex-basis: 100%; /* 当页面宽度小于800px时，每行只显示1个项目 */
+      }
+    }
+  }
+}
+
+.subscribe {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* 水平居中 */
+  margin: 20px;
+  .subscribe-input {
+    margin: 0 auto;
+    width: 300px;
+    margin: 20px 0 10px 0;
+  }
+}
+
+@keyframes slowHeartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heartbeat-element {
+  animation: slowHeartbeat 3s infinite;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
+.copyright {
+  height: 100px;
+  margin-top: 0;
+  padding-top: 30px;
+  color: #d1bcf3;
+  text-align: center;
+  background-color: #6621d6;
+  position: sticky;
+}
+
+.notFound {
+  margin: 150px 0 200px 0;
+}

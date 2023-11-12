@@ -1,0 +1,6 @@
+{
+  "semi": false,
+  "singleQuote": false, // 如果你希望使用单引号而不是双引号，请将此设置为 true
+  "printWidth": 80
+  // 其他配置项...
+}
