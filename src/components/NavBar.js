@@ -1,7 +1,6 @@
 import * as allList from "../list.js";
 import { Menu } from 'antd';
 import { Link } from 'react-router-dom';
-import Wallet from './Wallet.js';
 import LogoImage from '../assets/TransperantLogo.png';
 import { useNavigate } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
@@ -39,7 +38,6 @@ function NavBar (params) {
       <Menu className="navbar-menu" mode="horizontal">
         {navList.map(item => (<Menu.Item key={item.id}><Link to={item.path}>{item.name}</Link></Menu.Item>))}
       </Menu>
-      <div className='navbar-wallet'><Wallet /></div>
     </div >
   );
 }
